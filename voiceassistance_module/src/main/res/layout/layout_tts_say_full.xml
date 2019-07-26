@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="110dp"
+    android:paddingBottom="30dp">
+
+    <ImageView
+        android:id="@+id/img_tts_out"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:contentDescription="@null"
+        android:src="@drawable/tts_say_out" />
+
+    <ImageView
+        android:id="@+id/img_tts_in"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_margin="10dp"
+        android:contentDescription="@null"
+        android:src="@drawable/tts_say_in" />
+
+    <TextView
+        android:id="@+id/tv_tts_say"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="94dp"
+        android:textColor="#FFF"
+        android:textSize="31px" />
+
+</FrameLayout>

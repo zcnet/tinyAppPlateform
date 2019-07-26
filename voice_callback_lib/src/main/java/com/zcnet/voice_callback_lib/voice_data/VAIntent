@@ -1,0 +1,17 @@
+VAIntent {
+    static final long serialVersionUID = 1L;
+    Long userId;
+    Long createTime;
+    Boolean aiSessionReset;
+    String frontSessionId;
+    String frontSessionRoundId;
+    Integer dialogStatus;
+    String name;
+    List<VASlot> vaSlots [{
+        static final long serialVersionUID = 1L;
+        String slotType;
+        String originalWord;
+        String normalizedWord;
+        String transformerWord;
+    }];
+}

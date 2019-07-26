@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fl_upLayer"
+    android:layout_width="1280dp"
+    android:layout_height="wrap_content"
+    android:background="@android:color/darker_gray">
+
+    <ImageView
+        android:id="@+id/img_float_window_large"
+        android:layout_width="1280dp"
+        android:layout_height="720dp"
+        android:contentDescription="@null" />
+
+    <ImageView
+        android:id="@+id/iv_exit_full"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="79dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/cancel"
+        android:contentDescription="@null"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/iv_help"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginLeft="75dp"
+        android:layout_marginTop="160dp"
+        android:background="@drawable/help"
+        android:contentDescription="@null"
+        android:visibility="visible" />
+
+    <View
+        android:id="@+id/viewshowbottom"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="124dp"
+        android:background="#25FFFFFF"
+        android:visibility="invisible" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/sv_show_content"
+        android:layout_width="match_parent"
+        android:layout_height="541dp"
+        android:layout_marginBottom="125dp"
+        android:layout_marginLeft="210dp"
+        android:layout_marginTop="52dp"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:id="@+id/ll_js_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" />
+    </android.support.v4.widget.NestedScrollView>
+
+    <ImageView
+        android:id="@+id/img_float_window_small"
+        android:layout_width="match_parent"
+        android:layout_height="128dp"
+        android:layout_gravity="bottom"
+        android:contentDescription="@null" />
+
+    <com.aoshuotec.voiceassistant.customizedViews.VoiceWaveView
+        android:id="@+id/wave_view"
+        android:layout_width="match_parent"
+        android:layout_height="128dp"
+        android:layout_gravity="bottom" />
+
+    <com.aoshuotec.voiceassistant.customizedViews.VoiceWaveView
+        android:id="@+id/wave_view2"
+        android:layout_width="match_parent"
+        android:layout_height="128dp"
+        android:layout_gravity="bottom" />
+
+    <com.aoshuotec.voiceassistant.customizedViews.VoiceWaveView
+        android:id="@+id/wave_view3"
+        android:layout_width="match_parent"
+        android:layout_height="128dp"
+        android:layout_gravity="bottom" />
+
+    <ImageView
+        android:id="@+id/iv_exit"
+        android:padding="12.5dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="52dp"
+        android:layout_marginLeft="61px"
+        android:src="@drawable/close_bottom"
+        android:contentDescription="@null"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/iv_show_busymark"
+        android:layout_width="46dp"
+        android:layout_height="47dp"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="45dp"
+        android:layout_marginLeft="141dp"
+        android:background="@drawable/loading_bottom"
+        android:contentDescription="@null"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/iv_show_busymark_full"
+        android:layout_width="46dp"
+        android:layout_height="47dp"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="35dp"
+        android:layout_marginLeft="76dp"
+        android:background="@drawable/loading_bottom"
+        android:contentDescription="@null"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/iv_tts_play"
+        android:layout_width="48dp"
+        android:layout_height="47dp"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="47dp"
+        android:layout_marginLeft="143dp"
+        android:background="@drawable/tts_play"
+        android:contentDescription="@null" />
+
+    <TextView
+        android:id="@+id/tv_show_tts_say"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="47dp"
+        android:layout_marginLeft="217dp"
+        android:gravity="bottom"
+        android:padding="0dp"
+        android:text=""
+        android:textColor="#FFF"
+        android:textSize="36px"  />
+
+    <TextView
+        android:id="@+id/tv_show_sentence"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="43dp"
+        android:layout_marginLeft="216dp"
+        android:gravity="bottom"
+        android:padding="0dp"
+        android:text=""
+        android:textColor="#FFF"
+        android:textSize="35px" />
+
+    <TextView
+        android:id="@+id/tv_show_sentence_full"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="43dp"
+        android:layout_marginLeft="151dp"
+        android:gravity="bottom"
+        android:padding="0dp"
+        android:text=""
+        android:textColor="#FFF"
+        android:textSize="35px"/>
+</FrameLayout>

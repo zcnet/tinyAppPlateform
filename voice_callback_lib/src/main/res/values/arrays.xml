@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="ok">
+        <item>好的。</item>
+    </string-array>
+
+    <string-array name="blue_tooth_not_connect">
+        <item>你没有连接蓝牙，要用安吉星拨打的话，请告诉我。</item>
+    </string-array>
+
+    <string-array name="blue_tooth_wait_connect">
+        <item>好的，你可以连接蓝牙手机后再试一次。</item>
+    </string-array>
+
+    <string-array name="call_wait_close">
+        <item>为您拨打%1$s您可以说挂断来终止当前拨号。</item>
+    </string-array>
+
+    <string-array name="ask_for_call">
+        <item>你是要我拨打%1$s吗？</item>
+    </string-array>
+
+    <string-array name="call_start">
+        <item>为您拨打%1$s</item>
+    </string-array>
+
+    <string-array name="call_start_with_close">
+        <item>为您拨打%1$s,您可以说挂断来终止当前拨号。</item>
+    </string-array>
+
+    <string-array name="stop_call">
+        <item>好的，停止拨号。</item>
+    </string-array>
+
+    <string-array name="say_number">
+        <item>请继续说号码。</item>
+    </string-array>
+
+    <string-array name="say_contacts_name">
+        <item>请说联系人姓名。</item>
+    </string-array>
+
+    <string-array name="say_contacts_number">
+        <item>请说您想拨打的号码。</item>
+    </string-array>
+
+    <string-array name="get_current_number">
+        <item>请告诉我准确的号码。</item>
+    </string-array>
+
+    <string-array name="call_stop_no_name">
+        <item>对不起，没有姓名不能拨打。</item>
+    </string-array>
+
+    <string-array name="stop_session">
+        <item>终止本轮通话。</item>
+    </string-array>
+
+    <string-array name="call_need_contacts_name">
+        <item>我需要一位联系人姓名，请确认。</item>
+    </string-array>
+
+    <string-array name="contacts_book_not_sync">
+        <item>您的手机电话簿没有同步到车机，正在为您努力加载电话簿。</item>
+    </string-array>
+
+    <string-array name="contacts_name_not_find">
+        <item>找不到联系人的电话号码，请重新说出联系人姓名，为您查找。</item>
+    </string-array>
+
+    <string-array name="find_multi_phone">
+        <item>找到多个电话，请问要打哪一个呢？</item>
+    </string-array>
+
+    <string-array name="index_not_in_list">
+        <item>您选择的索引不在列表，请重新选择。</item>
+    </string-array>
+
+    <string-array name="index_not_in_bound">
+        <item>您选择的页码超出范围，请重新选择。</item>
+    </string-array>
+
+    <string-array name="find_number_type_error">
+        <item>未找到该类型的电话号码，请重新说出电话类型为您查找。</item>
+    </string-array>
+
+    <string-array name="find_number_multi">
+        <item>找到该类型多个电话号码，请问要打哪一个呢？</item>
+    </string-array>
+
+    <string-array name="find_number_multi_in_one_name">
+        <item>找到该姓名的多条记录，请确认选择哪一条，或者说出全名。</item>
+    </string-array>
+
+    <string-array name="contacts_not_clear">
+        <item>不清楚你想联系的人，请说出全名或者选择第几个记录。</item>
+    </string-array>
+
+    <string-array name="not_find_contacts_index">
+        <item>无法为你找到联系人索引，请重新选择。</item>
+    </string-array>
+
+    <string-array name="no_miss_call">
+        <item>您当前没有未接来电。</item>
+    </string-array>
+
+    <string-array name="show_missing_call">
+        <item>为您显示未接来电。</item>
+    </string-array>
+
+    <string-array name="no_redial_num">
+        <item>没有可以重播的号码。</item>
+    </string-array>
+
+    <string-array name="redial_start">
+        <item>为您重拨%1$s,您可以说挂断来终止当前拨号。</item>
+    </string-array>
+</resources>

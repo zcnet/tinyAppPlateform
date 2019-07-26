@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="110dp"
+    android:paddingBottom="30dp">
+
+    <ImageView
+        android:id="@+id/img_user_ou1"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:contentDescription="@null"
+        android:src="@drawable/user_out" />
+
+    <ImageView
+        android:id="@+id/img_user_in"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_margin="10dp"
+        android:contentDescription="@null"
+        android:src="@drawable/user_in" />
+
+
+    <!--<ImageView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="80dp"-->
+        <!--android:layout_marginLeft="113dp"-->
+        <!--android:contentDescription="@null"-->
+        <!--android:src="@drawable/bg_say" />-->
+
+
+    <TextView
+        android:id="@+id/tv_user_say"
+        android:background="@drawable/bg_say"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="94dp"
+        android:paddingLeft="44dp"
+        android:paddingRight="25dp"
+        android:paddingTop="17dp"
+        android:paddingBottom="17dp"
+        android:textColor="#FFF"
+        android:textSize="29px" />
+
+</FrameLayout>

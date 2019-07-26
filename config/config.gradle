@@ -1,0 +1,17 @@
+ext { // app 相关版本控制
+    versions = [ sdkMinVersion : 16,
+                 sdkTargetVersion : 22,
+                 sdkCompileVersion : 23,
+                 toolsBuildVersion : "23.0.1",
+                 appVersionCode : 8,
+                 appVersionName : "1.0.2.1" ] // 依赖相关版本控制
+    depVersion = [
+            appCompatVersion : "23.+",
+            recyclerViewVersion : "23.0.0-alpha1" ]
+//依赖
+    deps = [
+            suport : [ appcompat : "com.android.support:appcompat-v7:${depVersion.appCompatVersion}",
+                        recyclerview: "com.android.support:recyclerview-v7:${depVersion.recyclerViewVersion}" ]
+    ]
+}
+

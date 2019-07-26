@@ -1,28 +1,59 @@
 apply plugin: 'com.android.application'
-
 android {
-    compileSdkVersion 26
+    def versions = rootProject.ext.versions
+    compileSdkVersion versions.sdkCompileVersion
+
     defaultConfig {
-        applicationId "plateform.tinyapp.com.tinyappplateform"
-        minSdkVersion 15
-        targetSdkVersion 26
-        versionCode 1
-        versionName "1.0"
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        applicationId "com.tinyapp.tinyappplateform"
+        minSdkVersion versions.sdkMinVersion
+        targetSdkVersion versions.sdkTargetVersion
+        versionCode versions.appVersionCode
+        versionName versions.appVersionName
+        multiDexEnabled true
+        ndk {
+            abiFilters "armeabi"
+        }
     }
+    signingConfigs {
+        release {
+            storeFile file(RELEASE_STORE_FILE)
+            storePassword RELEASE_STORE_PASSWORD
+            keyAlias RELEASE_KEY_ALIAS
+            keyPassword RELEASE_KEY_PASSWORD
+        }
+    }
+
     buildTypes {
         release {
             minifyEnabled false
+            debuggable false
+            signingConfig signingConfigs.release
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            minifyEnabled false // 是否混淆
+            debuggable true
+            signingConfig signingConfigs.release
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
-}
 
+}
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation 'com.android.support:appcompat-v7:26.1.0'
-    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+
+    def dependencies = rootProject.ext.deps
+    implementation dependencies.suport.appcompat
+    compile 'com.android.support:multidex:1.0.0'
+
+    implementation project(':common_model')
+    implementation project(':imageloader_lib')
     testImplementation 'junit:junit:4.12'
-    androidTestImplementation 'com.android.support.test:runner:1.0.2'
-    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.4.0'
+//    implementation 'com.alibaba:fastjson:1.1.60.android'
+//    implementation 'com.yanyusong.y_divideritemdecoration:y_divideritemdecoration:1.0'
+//    implementation project(':contacts_lib')
+//    implementation project(':weexandroid_module')
+
+    implementation project(':voiceassistance_module')
 }

@@ -1,1 +1,1 @@
-include ':app'
+include ':app', ':common_model', ':utils_lib', ':network_lib', ':weexandroid_module', ':userinfo_lib', ':voice_callback_lib', 'imageloader_lib', 'contacts_lib', 'voiceassistance_module', 'znlp', 'voiceinteractionmodule', ':Refreshlistview'

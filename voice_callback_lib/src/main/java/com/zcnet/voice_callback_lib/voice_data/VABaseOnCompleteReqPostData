@@ -1,0 +1,68 @@
+VABaseOnCompleteReqPostData {
+    static final long serialVersionUID = 1L;
+
+    String userId;                  // 用户 ID；废弃。
+    String frontSessionId;          // 前端会话 ID；废弃。
+    String frontSessionRoundId;     // 对话唯一标识符；废弃。
+    String sessionId;               // 会话 ID，废弃。
+    String sceneId;                 // 场景 ID，废弃。
+    [NON_EMPTY] String frontInfo;   // 前端信息。
+
+    [NON_EMPTY] List<VABaseNatureEntity> nlpInfoEx [{    // 自然语言处理结果
+        Integer isQuestion;
+        Integer isPolite;
+        Integer emotion;
+    }];
+
+    [NON_EMPTY] List<VABaseIntent> prevIntent [{
+        String name;                      // 意图名称
+        Integer actionCount;                    // 动作计数器
+        List<VABaseIntentSlot> slots [{         // 词槽
+            String name;                    // 词槽名称
+            String originalWord;                // 原始词
+            String normalizedWord;              // 规整词
+            String transformerWord;             // 转换词
+            String requiredSlot;                // 必须填槽词槽
+            String slotType;                    // 词槽类型
+            String resetWhenIntentRecognized;   // 重置词槽
+            String clarify;                     // 澄清语言集
+        }];
+        [NON_EMPTY] List<VABaseIntentSlotGroup> slotGroups [{   // 词槽组
+            String slotGroupName;                               // 词槽组名称
+            String requiredSlotGroup;                           // 必须填槽词槽组
+            Integer leastFillSlot;                              // 最小填槽数
+            List<VABaseIntentSlotGroupSlot> slots [{            // 词槽
+                String name;        // 词槽名称
+                String requiredSlot;    // 必须填槽词槽
+            }];
+        }];
+    }];
+    List<VABaseIntent> currIntent [{
+        String name;                      // 意图名称
+        Integer actionCount;                    // 动作计数器
+        List<VABaseIntentSlot> slots [{         // 词槽
+            String name;                    // 词槽名称
+            String originalWord;                // 原始词
+            String normalizedWord;              // 规整词
+            String transformerWord;             // 转换词
+            String requiredSlot;                // 必须填槽词槽
+            String slotType;                    // 词槽类型
+            String resetWhenIntentRecognized;   // 重置词槽
+            String clarify;                     // 澄清语言集
+        }];
+        [NON_EMPTY] List<VABaseIntentSlotGroup> slotGroups [{   // 词槽组
+            String slotGroupName;                               // 词槽组名称
+            String requiredSlotGroup;                           // 必须填槽词槽组
+            Integer leastFillSlot;                              // 最小填槽数
+            List<VABaseIntentSlotGroupSlot> slots [{            // 词槽
+                String name;        // 词槽名称
+                String requiredSlot;    // 必须填槽词槽
+            }];
+        }];
+    }];
+    Integer intentSimilar;  // 新意图是否相似于上一个意图。
+
+    [NON_EMPTY] Integer action;         // 动作类型
+    [NON_EMPTY] Integer dialogStatus;   // 对话状态：确认、合并、重入、仅填槽、填槽完成。
+    [NON_EMPTY] Integer priority;       // 优先级延后 FLAG：不延后、延后。
+}

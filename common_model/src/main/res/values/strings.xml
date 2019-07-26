@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">common_model</string>
+    <string name="network_connect_over_time">网络连接超时</string>
+    <string name="check_phone_is_connected_network">请检查您的手机是否联网</string>
+    <string name="reguist">重试</string>
+    <string name="back">返回</string>
+    <string name="network_over_time">加载超时，请点击重试或返回</string>
+</resources>

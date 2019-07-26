@@ -1,0 +1,67 @@
+VABaseOnResultReqPostData {
+    static final long serialVersionUID = 1L;
+
+    Boolean resetAiSession;
+    String frontSessionId;
+    String frontSessionRoundId;
+
+    List<VABaseIntent> intent [{
+        String name;                      // 意图名称
+        Integer actionCount;                    // 动作计数器
+        List<VABaseIntentSlot> slots [{         // 词槽
+            String name;                    // 词槽名称
+            String slotType;                    // 词槽类型
+            String originalWord;                // 原始词
+            String normalizedWord;              // 规整词
+            String transformerWord;             // 转换词
+            String requiredSlot;                // 必须填槽词槽
+            String resetWhenIntentRecognized;   // 重置词槽
+            String clarify;                     // 澄清语言集
+        }];
+        [NON_EMPTY] List<VABaseIntentSlotGroup> slotGroups [{   // 词槽组
+            String slotGroupName;                               // 词槽组名称
+            String requiredSlotGroup;                           // 必须填槽词槽组
+            Integer leastFillSlot;                              // 最小填槽数
+            List<VABaseIntentSlotGroupSlot> slots [{            // 词槽
+                String name;        // 词槽名称
+                String requiredSlot;    // 必须填槽词槽
+            }];
+        }];
+    }];
+
+    Integer actionType;
+    [NON_EMPTY] List<VAActionEntity> vaActionList [{
+        static final long serialVersionUID = 1L;
+        String name;
+        [NON_EMPTY] Integer priority;
+        [NON_EMPTY] Integer interval;
+        [NON_EMPTY] Integer retry;
+        [NON_EMPTY] Integer doActionNow;
+        [NON_EMPTY] List<VAText> textList [{
+            static final long serialVersionUID = 1L;
+            [NON_EMPTY] String text;
+            [NON_EMPTY] String id;
+            [NON_EMPTY] Integer interval;
+            [NON_EMPTY] Integer isShow;
+        }];
+    }];
+    [NON_EMPTY] List<VAErrorTextEntity> errorTextList [{
+        static final long serialVersionUID = 1L;
+        [NON_EMPTY] Integer errorHintNum;
+        [NON_EMPTY] List<VAText> textList [{
+            static final long serialVersionUID = 1L;
+            [NON_EMPTY] String text;
+            [NON_EMPTY] String id;
+            [NON_EMPTY] Integer interval;
+            [NON_EMPTY] Integer isShow;
+        }];
+    }];
+    [NON_EMPTY] List<VABuActionEntity> buActionList [{
+        static final long serialVersionUID = 1L;
+        [NON_EMPTY] String appName;
+        [NON_EMPTY] String moduleName;
+        [NON_EMPTY] Integer displayType;
+        [NON_EMPTY] Integer isReuse;
+        [NON_EMPTY] String content;
+    }];
+}

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Refreshlistview/Refreshlistview.iml" filepath="$PROJECT_DIR$/Refreshlistview/Refreshlistview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/common_model/common_model.iml" filepath="$PROJECT_DIR$/common_model/common_model.iml" />
+      <module fileurl="file://$PROJECT_DIR$/contacts_lib/contacts_lib.iml" filepath="$PROJECT_DIR$/contacts_lib/contacts_lib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/imageloader_lib/imageloader_lib.iml" filepath="$PROJECT_DIR$/imageloader_lib/imageloader_lib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/network_lib/network_lib.iml" filepath="$PROJECT_DIR$/network_lib/network_lib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/userinfo_lib/userinfo_lib.iml" filepath="$PROJECT_DIR$/userinfo_lib/userinfo_lib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/utils_lib/utils_lib.iml" filepath="$PROJECT_DIR$/utils_lib/utils_lib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/voiceAssistant.iml" filepath="$PROJECT_DIR$/voiceAssistant.iml" />
+      <module fileurl="file://$PROJECT_DIR$/voice_callback_lib/voice_callback_lib.iml" filepath="$PROJECT_DIR$/voice_callback_lib/voice_callback_lib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/voiceassistance_module/voiceassistance_module.iml" filepath="$PROJECT_DIR$/voiceassistance_module/voiceassistance_module.iml" />
+      <module fileurl="file://$PROJECT_DIR$/voiceinteractionmodule/voiceinteractionmodule.iml" filepath="$PROJECT_DIR$/voiceinteractionmodule/voiceinteractionmodule.iml" />
+      <module fileurl="file://$PROJECT_DIR$/weexandroid_module/weexandroid_module.iml" filepath="$PROJECT_DIR$/weexandroid_module/weexandroid_module.iml" />
+      <module fileurl="file://$PROJECT_DIR$/znlp/znlp.iml" filepath="$PROJECT_DIR$/znlp/znlp.iml" />
+    </modules>
+  </component>
+</project>
