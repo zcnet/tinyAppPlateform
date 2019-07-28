@@ -22,7 +22,7 @@ public class ImageLoaderUtil {
     public static final int LOAD_STRATEGY_DEFAULT = 0;
 
     private volatile static ImageLoaderUtil mInstance;
-    //本应该使用策略模式，用基类声明，但是因为Glide特殊问题
+    //本应该使用策略模式，用基类声明，但是因为Glide 自定义问题
     //持续优化更新
     private BaseImageLoaderStrategy mStrategy;
 

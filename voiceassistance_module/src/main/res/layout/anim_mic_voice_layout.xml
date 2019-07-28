@@ -63,19 +63,19 @@
         android:layout_gravity="bottom"
         android:contentDescription="@null" />
 
-    <com.aoshuotec.voiceassistant.customizedViews.VoiceWaveView
+    <com.z.voiceassistant.customizedViews.VoiceWaveView
         android:id="@+id/wave_view"
         android:layout_width="match_parent"
         android:layout_height="128dp"
         android:layout_gravity="bottom" />
 
-    <com.aoshuotec.voiceassistant.customizedViews.VoiceWaveView
+    <com.z.voiceassistant.customizedViews.VoiceWaveView
         android:id="@+id/wave_view2"
         android:layout_width="match_parent"
         android:layout_height="128dp"
         android:layout_gravity="bottom" />
 
-    <com.aoshuotec.voiceassistant.customizedViews.VoiceWaveView
+    <com.z.voiceassistant.customizedViews.VoiceWaveView
         android:id="@+id/wave_view3"
         android:layout_width="match_parent"
         android:layout_height="128dp"

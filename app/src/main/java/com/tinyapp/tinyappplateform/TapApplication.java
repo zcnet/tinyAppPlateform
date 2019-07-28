@@ -3,8 +3,8 @@ package com.tinyapp.tinyappplateform;
 import android.content.ComponentName;
 import android.content.Intent;
 
-import com.aoshuotec.voiceassistant.FunctionManager;
-import com.aoshuotec.voiceassistant.application.MApplication;
+import com.z.voiceassistant.FunctionManager;
+import com.z.voiceassistant.application.MApplication;
 import com.z.tinyapp.common.base.BaseApplication;
 import com.z.tinyapp.utils.common.PrefernceUtil;
 
@@ -33,7 +33,7 @@ public class TapApplication extends BaseApplication {
 
                 Intent intent = new Intent();
                 intent.setComponent(new ComponentName(TapApplication.this, FunctionManager.class));
-                intent.setPackage("com.aoshuotec.voiceassistant");
+                intent.setPackage("com.z.voiceassistant");
                 startService(intent);
                 /*intent = new Intent(TapApplication.this, TestActivity.class);
                 intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);

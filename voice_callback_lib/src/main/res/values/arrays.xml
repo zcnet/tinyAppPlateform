@@ -5,7 +5,7 @@
     </string-array>
 
     <string-array name="blue_tooth_not_connect">
-        <item>你没有连接蓝牙，要用安吉星拨打的话，请告诉我。</item>
+        <item>你没有连接蓝牙，是否拨打的话，请告诉我。</item>
     </string-array>
 
     <string-array name="blue_tooth_wait_connect">

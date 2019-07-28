@@ -4,7 +4,7 @@ android {
     def versions = rootProject.ext.versions
     compileSdkVersion versions.sdkCompileVersion
     defaultConfig {
-//        applicationId "com.aoshuotec.voiceassistant"
+//        applicationId "com.z.voiceassistant"
         minSdkVersion versions.sdkMinVersion
         targetSdkVersion versions.sdkTargetVersion
         versionCode versions.appVersionCode

@@ -29,13 +29,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
-import MBluetoothService.ContactDetailInfo;
-import MBluetoothService.ContactListInfo;
-import MBluetoothService.EPhoneNumType;
-import MBluetoothService.Proxy.IBluetooth;
-import MBluetoothService.TelephoneNum;
 import MCommon.EResult;
-import tinyrpc.RpcError;
 import znlp.com.ContactMgr;
 
 /**

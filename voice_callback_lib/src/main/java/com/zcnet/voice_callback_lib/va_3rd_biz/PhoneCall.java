@@ -52,7 +52,7 @@ public class PhoneCall {
             vaFramework.setIsUseOnStar(true);
         }
         if (!(isBtConnected()) && !(vaFramework.isUseOnStar())) {
-            // 如果蓝牙没有连接，安吉星标志位为 false。
+
             sLog.i(LOG_TAG, "makeCall: !isBtConnected.");
             sLog.i(LOG_TAG, "makeCall: !isUseOnStar.");
             vaFramework.getVoiceData().clearExpectedIntent();

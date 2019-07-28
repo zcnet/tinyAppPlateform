@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.aoshuotec.voiceassistant"
+    package="com.z.voiceassistant"
     android:sharedUserId = "android.uid.system"
     >
 
@@ -58,7 +58,7 @@
             <intent-filter>
                 <action android:name="com.z.hmi.hmiservice.alpush"/>
                 <data android:scheme="package"
-                    android:sspPrefix="//com.aoshuotec.voiceassistant"/>
+                    android:sspPrefix="//com.z.voiceassistant"/>
             </intent-filter>
         </receiver>
     </application>

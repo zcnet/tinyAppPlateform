@@ -255,7 +255,6 @@ public class MainActivity extends BaseActivity implements MainView {
 
         //Intent intent = new Intent();
         //intent.setComponent(new ComponentName(this, FunctionManager.class));
-        //intent.setPackage("com.aoshuotec.voiceassistant");
         //startService(intent);
     }
 
