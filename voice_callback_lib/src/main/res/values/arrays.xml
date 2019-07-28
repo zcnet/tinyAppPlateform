@@ -61,7 +61,7 @@
     </string-array>
 
     <string-array name="contacts_book_not_sync">
-        <item>您的手机电话簿没有同步到车机，正在为您努力加载电话簿。</item>
+        <item>您的手机电话簿没有同步到 ，正在为您努力加载电话簿。</item>
     </string-array>
 
     <string-array name="contacts_name_not_find">

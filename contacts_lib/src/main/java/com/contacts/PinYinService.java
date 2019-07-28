@@ -470,7 +470,7 @@ public class PinYinService extends Service {
         }
 
         /**
-         * 获取从车机通讯录获取的联系人列表(无排序)
+         * 获取从 通讯录获取的联系人列表(无排序)
          */
         //public ArrayList<PinYinModule> getContactsList() {
         //    return PinYinService.this.getContactsList();

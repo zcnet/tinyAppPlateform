@@ -10,7 +10,7 @@ public class ConstV {
     //是否为手机模式
     public static final boolean isOnPhone = false;
 
-    //是否登陆车机
+    //是否登陆 
     public static final boolean isUserAndNet = false;
 
     public static final int MAX_RETRY_COUNT = 1;
